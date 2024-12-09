@@ -36,55 +36,28 @@
         </div>
     </div>
 
-    <!-- <script>
+<script>
     const images = document.querySelectorAll('.portfolio img');
     const texts = document.querySelectorAll('.text-overlay');
     let currentIndex = 0;
 
     function changeImage() {
         // 現在の画像とテキストを非表示
-        images[currentIndex].classList.remove('active');
-        texts[currentIndex].classList.remove('active');
-
-        // 次の画像とテキストを表示
-        currentIndex++;
-        
-        if (currentIndex < images.length) {
-            images[currentIndex].classList.add('active');
-            texts[currentIndex].classList.add('active');
-            setTimeout(changeImage, 4000); // 4秒後に次の画像に切り替え
-        }
-    }
-
-    // 初回実行
-    setTimeout(changeImage, 4000); // 4秒後に最初の切り替えが始まる
-</script> -->
-<script>
-    const images = document.querySelectorAll('.portfolio img');
-    const texts = document.querySelectorAll('.text-overlay');
-    const backgrounds = document.querySelectorAll('.custom-background');
-    let currentIndex = 0;
-
-    function changeImage() {
-        // 現在の画像、テキスト、背景を非表示
         images[currentIndex]?.classList.remove('active');
         texts[currentIndex].classList.remove('active');
-        backgrounds[currentIndex]?.classList.remove('active');
-
-        // 次の画像、テキスト、背景を表示
+        // 次の画像とテキストを表示
         currentIndex++;
         
         if (currentIndex < images.length) {
             images[currentIndex]?.classList.add('active');
             texts[currentIndex].classList.add('active');
-            backgrounds[currentIndex]?.classList.add('active');
             setTimeout(changeImage, 4000); // 4秒後に次の画像に切り替え
         }
     }
-
     // 初回実行
     setTimeout(changeImage, 4000); // 4秒後に最初の切り替えが始まる
 </script>
+
 
 </body>
 </html>
