@@ -26,6 +26,7 @@
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    z-index: 1; /* 画像を背景よりも上に配置 */
 }
 
 .portfolio img.active {
@@ -42,6 +43,7 @@
     opacity: 0;
     transition: opacity 1s ease-in-out;
     text-align: center;
+    z-index: 2;
 }
 
 .text-overlay.active {
@@ -75,7 +77,6 @@
     background: linear-gradient(45deg, #ff6b6b, #f06595); /* グラデーション背景 */
     opacity: 1;
     transition: opacity 1s ease-in-out;
+    z-index: 0;
 }
-
-
 
