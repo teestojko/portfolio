@@ -13,7 +13,18 @@
     height: 100%;
 }
 
+@keyframes fadeIn {
+    0% {
+        opacity: 0; /* 最初は透明 */
+    }
+    100% {
+        opacity: 1; /* 最後に完全に表示 */
+    }
+}
+
 .portfolio_comment{
+    animation: fadeIn 2s ease-in-out; /* アニメーション名、時間、イージング */
+    opacity: 0; /* 最初は非表示状態 */
     position: absolute;
     top: 50%;
     right: 50%;
