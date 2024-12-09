@@ -57,17 +57,7 @@
     margin-top: 10px;
 }
 
-
-/* @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-} */
-
-/* .portfolio_comment{
+.portfolio_comment{
     animation: fadeIn 4s ease-in-out;
     opacity: 0;
     position: absolute;
@@ -79,10 +69,10 @@
     font-size: 1.5rem;
 }
 
-.under_water_name{
+.image_credit{
     position: absolute;
     bottom: 0;
     right: 0;
     color: white;
     font-size: 0,4rem;
-} */
+}
