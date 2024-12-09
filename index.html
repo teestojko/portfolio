@@ -8,13 +8,39 @@
 </head>
 <body>
     <div class="portfolio">
-        <img src="images/underwater.jpg" alt="underwater Picture" id="underwaterImage"/>
+        <div class="portfolio_inner">
+            <!-- Images -->
+            <img src="images/underwater.jpg" alt="Underwater Picture" class="active">
+            <img src="images/sky.jpg" alt="Sky Picture">
+
+            <!-- Text Overlays -->
+            <div class="text-overlay active">
+                <div class="portfolio_comment">今に満足<br>していますか？</div>
+                <div class="image_credit">Photo by Cristian Palmer on Unsplash</div>
+            </div>
+            <div class="text-overlay">
+                <div class="portfolio_comment">共に新たな創造を...</div>
+                <div class="image_credit">Photo by Sam Schooler on Unsplash</div>
+            </div>
+        </div>
     </div>
-    <div class="portfolio_comment">
-        今に満足<br>していますか？
-    </div>
-    <div class="under_water_name">
-        Photo by Cristian Palmer on Unsplash
-    </div>
+
+    <script>
+        // JavaScript: 画像とテキストを切り替えるロジック
+        const images = document.querySelectorAll('.portfolio img');
+        const texts = document.querySelectorAll('.text-overlay');
+        let currentIndex = 0;
+
+        setInterval(() => {
+            // 現在の画像とテキストを非表示
+            images[currentIndex].classList.remove('active');
+            texts[currentIndex].classList.remove('active');
+
+            // 次の画像とテキストを表示
+            currentIndex = (currentIndex + 1) % images.length; // インデックスを更新
+            images[currentIndex].classList.add('active');
+            texts[currentIndex].classList.add('active');
+        }, 4000); // 4秒ごとに切り替え
+    </script>
 </body>
 </html>
