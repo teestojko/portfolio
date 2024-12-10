@@ -74,8 +74,8 @@
             // ランダムなスケール（1〜2倍）
             const randomScale = Math.random() * 1 + 1;
 
-            // ランダムな透明度（0.3〜0.7）
-            const randomOpacity = Math.random() * 0.4 + 0.3;
+            // ランダムな透明度（0.3〜0.5）
+            const randomOpacity = Math.random() * 0.2 + 0.3;
 
             // ランダムな色（HSL値を使用してカラフルな効果を作成）
             const randomHue = Math.floor(Math.random() * 360); // 0〜360の色相
@@ -91,7 +91,7 @@
             light.style.background = `radial-gradient(circle, ${randomColor}, transparent)`;
 
             // ランダムな移動を設定
-            const randomDuration = Math.random() * 3 + 2; // 2秒〜5秒
+            const randomDuration = Math.random() * 1 + 4; // 4秒〜5秒
             light.style.transition = `all ${randomDuration}s ease-in-out`;
         });
 
