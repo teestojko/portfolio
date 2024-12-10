@@ -70,72 +70,18 @@
 
 .light-effect {
     position: absolute;
-    top: 20%;
-    left: 20%;
     width: 100px;
     height: 100px;
     background: radial-gradient(circle, rgba(255, 0, 0, 0.8), transparent);
     border-radius: 50%;
     opacity: 0.5;
-    animation: moveLight 5s infinite alternate;
-}
-
-.light-effect2 {
-    position: absolute;
-    top: 80%;
-    left: 80%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), transparent);
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: moveLight 5s infinite alternate;
-}
-
-.light-effect3 {
-    position: absolute;
-    top: 20%;
-    left: 70%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), transparent);
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: moveLight 5s infinite alternate;
-}
-
-.light-effect4 {
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), transparent);
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: moveLight 5s infinite alternate;
-}
-
-.light-effect5 {
-    position: absolute;
-    top: 90%;
-    left: 30%;
-    width: 100px;
-    height: 100px;
-    background: radial-gradient(circle, rgba(255, 0, 0, 0.8), transparent);
-    border-radius: 50%;
-    opacity: 0.5;
-    animation: moveLight 5s infinite alternate;
 }
 
 @keyframes moveLight {
     0% {
-        transform: translate(-50%, -50%) scale(1);
+        transform: translate(0, 0) scale(1);
     }
     100% {
-        transform: translate(50%, 50%) scale(1.5);
+        transform: translate(0, 0) scale(1.5);
     }
 }
-
-
-

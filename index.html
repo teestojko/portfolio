@@ -16,10 +16,10 @@
                 <div class="overlay-content">
                     <p>T-mas</p>
                     <div class="light-effect"></div>
-                    <div class="light-effect2"></div>
-                    <div class="light-effect3"></div>
-                    <div class="light-effect4"></div>
-                    <div class="light-effect5"></div>
+                    <div class="light-effect"></div>
+                    <div class="light-effect"></div>
+                    <div class="light-effect"></div>
+                    <div class="light-effect"></div>
                 </div>
             </div>
 
@@ -61,6 +61,39 @@
 
     // 初回実行
     setTimeout(changeImage, 4000); // 4秒後に最初の切り替えが始まる
+
+    // 光のエフェクトをランダムに動かす
+    const lightEffects = document.querySelectorAll('.light-effect');
+
+    function randomizeLights() {
+        lightEffects.forEach(light => {
+            // ランダムな位置（0〜100%）
+            const randomX = Math.random() * 100;
+            const randomY = Math.random() * 100;
+
+            // ランダムなスケール（1〜2倍）
+            const randomScale = Math.random() * 1 + 1;
+
+            // ランダムな透明度（0.3〜0.7）
+            const randomOpacity = Math.random() * 0.4 + 0.3;
+
+            // スタイルを適用
+            light.style.top = `${randomY}%`;
+            light.style.left = `${randomX}%`;
+            light.style.transform = `scale(${randomScale})`;
+            light.style.opacity = randomOpacity;
+
+            // ランダムな移動を設定
+            const randomDuration = Math.random() * 3 + 2; // 2秒〜5秒
+            light.style.transition = `all ${randomDuration}s ease-in-out`;
+        });
+
+        // 再帰的に呼び出してランダムな動きを繰り返す
+        setTimeout(randomizeLights, 3000); // 3秒ごとに動きを更新
+    }
+
+    // 初回実行
+    randomizeLights();
 
 </script>
 
