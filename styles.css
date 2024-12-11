@@ -98,10 +98,11 @@
 }
 
 .portfolio_company{
-
+    margin: 50vh auto;
 }
 
 .company_title{
-    
+    height: 100px;
+    width: 50px;
 }
 
