@@ -107,15 +107,41 @@ body{
 }
 
 .portfolio_company{
-    margin: 50vh 40vw;
+    margin: 40vh 25vw;
 }
 
 .company_title{
     margin: 0;
-    width: 20vw;
-    height: 5vh;
+    width: 50vw;
+    height: 20vh;
     align-content: center;
-    font-size: 5rem;
+    font-size: 3rem;
     color: white;
+}
+
+.company_message{
+    margin: 0;
+    width: 50vw;
+    height: 20vh;
+    align-content: center;
+    font-size: 3rem;
+    color: white;
+}
+
+/* フェードイン/フェードアウト用のスタイル */
+.hidden {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+/* company_message用スタイル */
+.company_message {
+    font-size: 2rem;
+    color: white;
+    transition: opacity 1.5s ease-in-out;
 }
 
