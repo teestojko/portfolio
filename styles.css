@@ -157,3 +157,33 @@ body{
                     0 0 30px #ffeb3b, 0 0 40px #ffd700, 0 0 50px #ffd700,
                     0 0 75px #ffd700;
 }
+
+.extra-content {
+    padding: 50px;
+    text-align: center;
+    background: #333;
+    color: white;
+    font-size: 1.5rem;
+    height: 100vh; /* 画面全体に表示 */
+    position: relative;
+}
+
+.more-light-effect {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle, rgba(255, 223, 70, 0.5), transparent);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+

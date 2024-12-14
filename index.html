@@ -27,7 +27,7 @@
                         <div class="light-effect"></div>
                         <div class="light-effect"></div>
                 </div>
-                <div class="extra-content">
+                <div class="extra-content hidden">
                     <h2>さらに進む...</h2>
                     <p>新たなコンテンツがここに表示されます。</p>
                     <div class="more-light-effect"></div>
@@ -137,8 +137,27 @@
         setTimeout(switchCompanyText, 3000);
     });
 
-</script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const extraContent = document.querySelector('.extra-content');
 
+        function onScroll() {
+            const scrollPosition = window.scrollY + window.innerHeight; // 現在のスクロール位置
+            const triggerPosition = extraContent.offsetTop; // トリガー位置
+
+            if (scrollPosition > triggerPosition) {
+                // hiddenクラスを削除してvisibleクラスを付与
+                extraContent.classList.remove('hidden');
+                extraContent.classList.add('visible');
+
+                // 一度だけ発火させるためにイベントを削除
+                window.removeEventListener('scroll', onScroll);
+            }
+        }
+
+        // スクロールイベントを監視
+        window.addEventListener('scroll', onScroll);
+    });
+</script>
 
 </body>
 </html>
