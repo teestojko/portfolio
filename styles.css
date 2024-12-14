@@ -120,7 +120,6 @@ body{
     transition: opacity 1.5s ease-in-out;
 }
 
-/* フェードイン/フェードアウト用のスタイル */
 .hidden {
     opacity: 0;
     transition: opacity 1.5s ease-in-out;
@@ -130,10 +129,11 @@ body{
     opacity: 1;
 }
 
-/* company_message用スタイル */
 .company_message {
     font-size: 2rem;
     color: white;
+    margin: 0;
+    height: 10vh;
     transition: opacity 1.5s ease-in-out;
 }
 
