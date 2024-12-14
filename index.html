@@ -110,14 +110,20 @@
         const companyTitle = document.querySelector('.company_title');
 
         function switchCompanyText() {
-            companyMessage.classList.add('hidden');
-            companyMessage.classList.remove('visible');
+        // .hidden クラスを削除し、.visible を適用して表示
+        companyMessage.classList.remove('hidden');
+        companyMessage.classList.add('visible');
 
-            setTimeout(() => {
-                companyTitle.classList.remove('hidden');
-                companyTitle.classList.add('visible');
-            }, 1500);
-        }
+        setTimeout(() => {
+            // .visible を削除して .hidden を再適用（非表示）
+            companyMessage.classList.remove('visible');
+            companyMessage.classList.add('hidden');
+
+            // companyTitle を表示
+            companyTitle.classList.remove('hidden');
+            companyTitle.classList.add('visible');
+        }, 1500);
+    }
 
         setTimeout(switchCompanyText, 3000);
     });
