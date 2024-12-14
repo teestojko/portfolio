@@ -118,25 +118,25 @@ body{
     font-size: 3rem;
     color: white;
     transition: opacity 1.5s ease-in-out;
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080,
-                0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080,
-                0 0 75px #ff0080;
+    text-shadow: 0 0 5px #ffffe0, 0 0 10px #ffffe0, 0 0 20px #ffeb3b,
+                    0 0 30px #ffeb3b, 0 0 40px #ffd700, 0 0 50px #ffd700,
+                    0 0 75px #ffd700;
     animation: glow 2s infinite alternate;
 }
 
-/* アニメーションで光の強弱をつける */
 @keyframes glow {
     from {
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080,
-                    0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080,
-                    0 0 75px #ff0080;
+        text-shadow: 0 0 5px #ffffe0, 0 0 10px #ffffe0, 0 0 20px #ffeb3b,
+                    0 0 30px #ffeb3b, 0 0 40px #ffd700, 0 0 50px #ffd700,
+                    0 0 75px #ffd700;
     }
     to {
-        text-shadow: 0 0 10px #fff, 0 0 20px #ff0080, 0 0 30px #ff0080,
-                    0 0 40px #ff0080, 0 0 50px #ff0080, 0 0 75px #ff0080,
-                    0 0 100px #ff0080;
+        text-shadow: 0 0 10px #ffffe0, 0 0 20px #ffeb3b, 0 0 30px #ffd700,
+                    0 0 40px #ffd700, 0 0 50px #ffd700, 0 0 75px #ffd700,
+                    0 0 100px #ffd700;
     }
 }
+
 
 .hidden {
     opacity: 0;
