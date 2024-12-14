@@ -119,15 +119,6 @@ body{
     color: white;
 }
 
-.company_message{
-    margin: 0;
-    width: 50vw;
-    height: 20vh;
-    align-content: center;
-    font-size: 3rem;
-    color: white;
-}
-
 /* フェードイン/フェードアウト用のスタイル */
 .hidden {
     opacity: 0;
