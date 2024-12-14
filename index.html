@@ -110,13 +110,10 @@
         const companyTitle = document.querySelector('.company_title');
 
         function switchCompanyText() {
-        // .hidden クラスを削除し、.visible を適用して表示
-        companyMessage.classList.remove('hidden');
-        companyMessage.classList.add('visible');
 
         setTimeout(() => {
-            // companyMessage.classList.remove('visible');
-            // companyMessage.classList.add('hidden');
+            companyMessage.classList.remove('visible');
+            companyMessage.classList.add('hidden');
 
             // companyTitle を表示
             companyTitle.classList.remove('hidden');
