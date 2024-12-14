@@ -115,6 +115,11 @@
         function switchCompanyText() {
 
         setTimeout(() => {
+            companyMessage.classList.remove('hidden');
+            companyMessage.classList.add('visible');
+        }, 6000);
+
+        setTimeout(() => {
             companyMessage.classList.remove('visible');
             companyMessage.classList.add('hidden');
 
