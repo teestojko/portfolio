@@ -118,23 +118,6 @@ body{
     font-size: 3rem;
     color: white;
     transition: opacity 1.5s ease-in-out;
-}
-
-.hidden {
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
-}
-
-.visible {
-    opacity: 1;
-}
-
-.company_message {
-    font-size: 2rem;
-    color: white;
-    margin: 0;
-    height: 10vh;
-    transition: opacity 1.5s ease-in-out;
     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0080,
                 0 0 30px #ff0080, 0 0 40px #ff0080, 0 0 50px #ff0080,
                 0 0 75px #ff0080;
@@ -153,4 +136,21 @@ body{
                     0 0 40px #ff0080, 0 0 50px #ff0080, 0 0 75px #ff0080,
                     0 0 100px #ff0080;
     }
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.company_message {
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+    height: 10vh;
+    transition: opacity 1.5s ease-in-out;
 }
