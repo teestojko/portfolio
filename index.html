@@ -73,32 +73,6 @@
     // 初回実行
     setTimeout(changeImage, 3000); // 3秒後に最初の切り替えが始まる
 
-//     function changeImage() {
-//     // 光のエフェクトを一時停止
-//     lightEffects.forEach(light => {
-//         light.style.transition = 'none'; // 動きを一時停止
-//     });
-
-//     // 次のインデックスを計算
-//     const nextIndex = (currentIndex + 1) % images.length;
-
-//     // 次の画像とテキストを表示
-//     images[nextIndex]?.classList.add('active');
-//     texts[nextIndex]?.classList.add('active');
-
-//     // 現在の画像とテキストを非表示
-//     setTimeout(() => {
-//         images[currentIndex]?.classList.remove('active');
-//         texts[currentIndex]?.classList.remove('active');
-//         currentIndex = nextIndex; // インデックスを更新
-
-//         // 光のエフェクトを再開
-//         lightEffects.forEach(light => {
-//             light.style.transition = ''; // 動きを再開
-//         });
-//     }, 100); // 切り替え後に再開
-// }
-
 
     // 光のエフェクトをランダムに動かす
     const lightEffects = document.querySelectorAll('.light-effect');
