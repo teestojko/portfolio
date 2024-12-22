@@ -115,6 +115,8 @@ body{
 
 .portfolio_company{
     margin: 0 25vw;
+    align-content: center;
+    height: 100vh;
 }
 
 .company_title{
